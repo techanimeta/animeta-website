@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120.33" height="35" viewBox="0 0 235.33 5">
+    <defs>
+        <style>.cls-1{fill:url(#linear-gradient);}.cls-2{font-size:13.32px;font-family:AkzidenzGroteskBQ-MedExt, AkzidenzGroteskBQ MedExt;}.cls-2,.cls-3{fill:#fff;}.cls-3{stroke:#fff;stroke-miterlimit:10;stroke-width:0.75px;}</style>
+        <linearGradient id="linear-gradient" y1="17.5" x2="204.33" y2="17.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#890eb2" />
+            <stop offset="0.02" stop-color="#9c0bc1" />
+            <stop offset="0.05" stop-color="#b007d1" />
+            <stop offset="0.08" stop-color="#bc05db" />
+            <stop offset="0.11" stop-color="#c004de" />
+            <stop offset="0.49" stop-color="#830fad" />
+            <stop offset="0.83" stop-color="#501885" />
+            <stop offset="1" stop-color="#3d1c75" />
+        </linearGradient>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <rect class="cls-1" width="204.33" height="35" rx="17.47" />
+            <text class="cls-2" transform="translate(45.1 21.41) scale(1.12 1)">CLICK TO EXPAND</text>
+            <path class="cls-3" d="M31.7,16.65s-.06,0-.14-.07.07-.46.15-.54l1.89-1.89,1.21-1.21.27-.29.18-.19L36.59,11H33.05c-.2,0-.44,0-.44-.27a.21.21,0,0,1,.06-.17.52.52,0,0,1,.35-.1h4.27c.31,0,.37,0,.37.36,0,1.36,0,2.77,0,4.31,0,.25-.09.38-.26.38s-.28-.26-.28-.42V11.41L32.8,15.73l-.68.68A.7.7,0,0,1,31.7,16.65Z" />
+            <path class="cls-3" d="M29.29,18.66s.06,0,.14.07-.07.45-.15.54l-1.89,1.89-1.21,1.21c-.09.09-.17.17-.27.29l-.18.19L24.4,24.28h3.54c.2,0,.44,0,.44.27a.21.21,0,0,1-.05.16.52.52,0,0,1-.36.11H23.71c-.32,0-.38,0-.38-.36,0-1.36,0-2.77,0-4.31,0-.25.09-.38.26-.38s.28.26.28.42c0,.34,0,.67,0,1.06V23.9l4.32-4.32.69-.68A.68.68,0,0,1,29.29,18.66Z" />
+        </g>
+    </g>
+</svg>

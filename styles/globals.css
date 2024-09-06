@@ -1,0 +1,1280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("../public/fonts/roboto/stylesheet.css");
+@import url("../public/fonts/roboto-condensed/stylesheet.css");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Akzidenz-Grotesk";
+  src: url("../public/fonts/AkzidenzGroteskBQ-MedExt.eot");
+  src: url("../public/fonts/AkzidenzGroteskBQ-MedExt.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/AkzidenzGroteskBQ-MedExt.woff2") format("woff2"),
+    url("../public/fonts/AkzidenzGroteskBQ-MedExt.woff") format("woff"),
+    url("../public/fonts/AkzidenzGroteskBQ-MedExt.svg#AkzidenzGroteskBQ-MedExt")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Akzidenz-Grotesk BQ Extended";
+  src: url("../public/fonts/AkzidenzGroteskBQ-Ext.eot");
+  src: url("../public/fonts/AkzidenzGroteskBQ-Ext.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/AkzidenzGroteskBQ-Ext.woff2") format("woff2"),
+    url("../public/fonts/AkzidenzGroteskBQ-Ext.woff") format("woff"),
+    url("../public/fonts/AkzidenzGroteskBQ-Ext.svg#AkzidenzGroteskBQ-Ext")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-Light.eot");
+  src: url("../public/fonts/Gotham-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-Light.woff2") format("woff2"),
+    url("../public/fonts/Gotham-Light.woff") format("woff"),
+    url("../public/fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Extra";
+  src: url("../public/fonts/Gotham-ExtraLightItalic.eot");
+  src: url("../public/fonts/Gotham-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-ExtraLightItalic.woff2") format("woff2"),
+    url("../public/fonts/Gotham-ExtraLightItalic.woff") format("woff"),
+    url("../public/fonts/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic")
+      format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-LightItalic.eot");
+  src: url("../public/fonts/Gotham-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-LightItalic.woff2") format("woff2"),
+    url("../public/fonts/Gotham-LightItalic.woff") format("woff"),
+    url("../public/fonts/Gotham-LightItalic.svg#Gotham-LightItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-BoldItalic.eot");
+  src: url("../public/fonts/Gotham-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-BoldItalic.woff2") format("woff2"),
+    url("../public/fonts/Gotham-BoldItalic.woff") format("woff"),
+    url("../public/fonts/Gotham-BoldItalic.svg#Gotham-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Extra";
+  src: url("../public/fonts/Gotham-ExtraLight.eot");
+  src: url("../public/fonts/Gotham-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-ExtraLight.woff2") format("woff2"),
+    url("../public/fonts/Gotham-ExtraLight.woff") format("woff"),
+    url("../public/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../public/fonts/Gotham-Book.eot");
+  src: url("../public/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+    url("../public/fonts/Gotham-Book.woff2") format("woff2"),
+    url("../public/fonts/Gotham-Book.woff") format("woff"),
+    url("../public/fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-Thin.eot");
+  src: url("../public/fonts/Gotham-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../public/fonts/Gotham-Thin.woff2") format("woff2"),
+    url("../public/fonts/Gotham-Thin.woff") format("woff"),
+    url("../public/fonts/Gotham-Thin.svg#Gotham-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../public/fonts/Gotham-Ultra.eot");
+  src: url("../public/fonts/Gotham-Ultra.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-Ultra.woff2") format("woff2"),
+    url("../public/fonts/Gotham-Ultra.woff") format("woff"),
+    url("../public/fonts/Gotham-Ultra.svg#Gotham-Ultra") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../public/fonts/Gotham-UltraItalic.eot");
+  src: url("../public/fonts/Gotham-UltraItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-UltraItalic.woff2") format("woff2"),
+    url("../public/fonts/Gotham-UltraItalic.woff") format("woff"),
+    url("../public/fonts/Gotham-UltraItalic.svg#Gotham-UltraItalic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../public/fonts/Gotham-Medium.eot");
+  src: url("../public/fonts/Gotham-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Gotham-Medium.woff2") format("woff2"),
+    url("../public/fonts/Gotham-Medium.woff") format("woff"),
+    url("../public/fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FatFrank";
+  src: url("../public/fonts/FatFrank-Heavy.eot");
+  src: url("../public/fonts/FatFrank-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/FatFrank-Heavy.woff2") format("woff2"),
+    url("../public/fonts/FatFrank-Heavy.woff") format("woff"),
+    url("../public/fonts/FatFrank-Heavy.svg#FatFrank-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* 
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Light.eot");
+  src: url("../public/fonts/RobotoCondensed-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Light.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Light.svg#RobotoCondensed-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Bold.eot");
+  src: url("../public/fonts/RobotoCondensed-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Bold.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Light.eot");
+  src: url("../public/fonts/RobotoCondensed-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Light.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Light.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-Light.svg#RobotoCondensed-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-LightItalic.eot");
+  src: url("../public/fonts/RobotoCondensed-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-LightItalic.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-LightItalic.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-LightItalic.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-LightItalic.svg#RobotoCondensed-LightItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Italic.eot");
+  src: url("../public/fonts/RobotoCondensed-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Italic.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Italic.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Italic.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-Italic.svg#RobotoCondensed-Italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Bold.eot");
+  src: url("../public/fonts/RobotoCondensed-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Bold.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Bold.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-BoldItalic.eot");
+  src: url("../public/fonts/RobotoCondensed-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-BoldItalic.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-BoldItalic.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-BoldItalic.svg#RobotoCondensed-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../public/fonts/RobotoCondensed-Regular.eot");
+  src: url("../public/fonts/RobotoCondensed-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../public/fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../public/fonts/RobotoCondensed-Regular.ttf") format("truetype"),
+    url("../public/fonts/RobotoCondensed-Regular.svg#RobotoCondensed-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Light.eot");
+  src: url("../public/fonts/Roboto-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Roboto-Light.woff2") format("woff2"),
+    url("../public/fonts/Roboto-Light.woff") format("woff"),
+    url("../public/fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+} */
+
+body {
+  @apply bg-[#e6e7e8];
+}
+.section-title {
+  @apply 2xl:text-[96px] 
+  2xl:leading-[90px]
+
+  xl:text-[78px] 
+  xl:leading-[70px]
+
+  lg:text-[62px] 
+  lg:leading-[56px]
+  
+  md:text-[46px] 
+  md:leading-[40px]
+  
+  sm:text-[42px] 
+  sm:leading-[42px]
+
+  text-[48px] 
+  leading-[50px]
+  
+  font-[400] 
+  font-robotoCondensed
+  text-[#ED2127]
+  uppercase;
+}
+
+.section-title span {
+  @apply font-[600] font-robotoCondensed;
+}
+
+.section-sub-title {
+  @apply 2xl:text-[48px] 
+  2xl:leading-[48px]
+
+  xl:text-[40px] 
+  xl:leading-[42px]
+
+  lg:text-[32px] 
+  lg:leading-[34px]
+  
+  md:text-[26px] 
+  md:leading-[28px]
+  
+  sm:text-[26px] 
+  sm:leading-[26px]
+
+  text-[24px] 
+  leading-[26px]
+  
+  uppercase 
+  font-[400]
+  font-robotoCondensed
+  text-black;
+}
+
+.ctaButtonSection {
+  @apply relative lg:mt-[-143px] sm:mt-[-100px] mt-[-110px] pb-12 z-10;
+}
+.ctaButtonSection .imageBox {
+  @apply xl:min-h-[150px] lg:min-h-[100px] md:min-h-[70px] sm:min-h-[100px] min-h-[100px];
+}
+
+.ctaButtonSection .imageBox img,
+.brandLogo img {
+  @apply xl:max-w-[60%] lg:max-w-[80%] md:max-w-[80%] sm:max-w-[70%] max-w-[65%];
+}
+
+.ctaButtonSection .imageBox img {
+  @apply xl:max-w-[100%] lg:max-w-[80%] md:max-w-[80%] sm:max-w-[70%] max-w-[75%];
+}
+
+.ctaButtonSection .imageBox img.image1 {
+  /* @apply h-[70px]
+  max-w-none */
+}
+.ctaButtonSection .imageBox img.image2 {
+  /* @apply h-[65px]
+  max-w-none */
+}
+.ctaButtonSection .imageBox img.image3 {
+  /* @apply h-[90px]
+max-w-none */
+}
+
+.ctaButtonSection .card.ctaBox {
+  @apply shadow-xl 
+  
+  lg:rounded-[46px]
+  sm:rounded-[20px]
+  rounded-[16px]
+
+  flex
+  flex-col
+  justify-between
+  
+  lg:px-14
+  sm:px-6
+  px-4
+  
+  lg:py-8
+  sm:py-6
+  py-6
+  
+  xl:w-2/6
+  lg:w-2/6
+  md:w-2/6
+  sm:w-2/6
+  
+  w-full;
+}
+.ctaButtonSection .card.ctaBox .ctaContentBox h5 {
+  @apply text-[16px]
+  leading-[22px]
+  
+  text-[#7B7B7B];
+}
+.ctaButtonSection .card.ctaBox.bg-black .ctaContentBox h5 {
+  @apply text-white;
+}
+.ctaButtonSection .card.ctaBox.bg-black .ctaContentBox .ctaButtons {
+  @apply bg-white text-[#ED2127] hover:bg-[#ED2127] hover:text-white;
+}
+.ctaButtonSection .card.ctaBox .ctaButtons {
+  @apply text-[#F6F6F6]
+  font-[400]
+  font-roboto
+  px-4
+  py-1
+  rounded-full
+  bg-[#7B7B7B]
+  hover:bg-black;
+}
+
+.buttonBox {
+  @apply rounded-full inline-block bg-white text-[#ED2127] hover:bg-[#9f1b1f] hover:text-white text-[16px] leading-[22px] py-2 px-12;
+}
+
+.ctaButtonSection .card.ctaBox .ctaContentBox {
+  @apply gap-[20px] flex content-center flex-col items-start;
+}
+
+.animetaContentSections .sectionContent {
+  @apply sm:rounded-[46px]
+  rounded-[16px]   
+  shadow-xl overflow-hidden bg-[#F6F6F6DE];
+}
+
+.ctaBoxContent {
+  @apply sm:rounded-[46px]
+  rounded-[16px]   
+  px-6
+  lg:px-14
+  py-12
+  pb-6
+  flex flex-col items-end
+  shadow-xl overflow-hidden bg-[#F6F6F6DE];
+}
+
+.ctaBoxContent.bg-black {
+  @apply bg-[#231F20]
+  justify-between
+}
+
+.ctaBoxContent h3{
+  @apply 2xl:text-[40px]
+  2xl:leading-[42px]
+
+  xl:text-[30px]
+  xl:leading-[32px]
+
+  lg:text-[26px]
+  lg:leading-[32px]
+
+  sm:text-[24px]
+  sm:leading-[30px]
+
+  text-[18px]
+  leading-[24px]
+  
+  font-[400]
+  tracking-wide
+  uppercase
+  font-robotoCondensed
+  text-black
+  w-full
+  mb-[20px];
+}
+
+.ctaBoxContent p{
+  @apply lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-[#7B7B7B]
+  font-roboto
+  mb-[30px];
+}
+
+.ctaBoxContent .ctaButtons {
+  @apply text-[#F6F6F6]
+  font-[400]
+  font-roboto
+  px-8
+  py-2
+  rounded-full
+  bg-[#7B7B7B]
+  hover:bg-black;
+}
+.ctaBoxContent.bg-black h3{
+  @apply text-white
+}
+
+.ctaBoxContent.bg-black .ctaButtons {
+@apply text-[#ED2127] bg-white hover:bg-[#ED2127] hover:text-[#fff]
+}
+
+
+
+.animetaContentSections .sectionContent.bgBlack {
+  @apply bg-black;
+}
+.animetaContentSections .contentBox {
+  @apply sm:px-12
+  px-6
+  
+  sm:py-16
+  py-6;
+}
+.animetaContentSections .sectionDescription h3 {
+  @apply 2xl:text-[40px]
+  2xl:leading-[46px]
+
+  xl:text-[30px]
+  xl:leading-[32px]
+
+  lg:text-[26px]
+  lg:leading-[32px]
+
+  sm:text-[24px]
+  sm:leading-[30px]
+
+  text-[18px]
+  leading-[24px]
+  
+  font-[600]
+  tracking-wide
+  font-robotoCondensed
+  text-black
+  mb-[20px];
+}
+.animetaContentSections .sectionDescription .textWhite {
+  @apply text-white;
+}
+.animetaContentSections .sectionDescription p {
+  @apply lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-[#7B7B7B]
+  font-roboto;
+}
+
+.animetaContentSections .sectionDescription .ctaButtons {
+  @apply text-[#F6F6F6]
+  text-[16px]
+  md:text-[16px]
+  lg:text-[20px]
+  inline-block
+  mt-8
+  font-[400]
+  font-roboto
+  px-8
+  py-2
+  rounded-full
+  bg-[#ED2127]
+  hover:bg-black;
+}
+
+.animetaContentSections .brandLogo {
+  @apply sm:mb-[50px] 
+  mb-[30px];
+}
+.appButtons {
+  @apply flex gap-[20px] mt-12 mb-4;
+}
+.gallery .galleryBox {
+  @apply sm:rounded-[46px]
+  rounded-[16px]
+  
+  shadow-xl overflow-hidden bg-[#ED2127];
+}
+.gallery .galleryText {
+  @apply px-12 py-6
+}
+
+.galleryText h2 {
+  @apply 2xl:text-[58px]
+  2xl:leading-[62px]
+
+  lg:text-[32px]
+  lg:leading-[38px]
+  
+  md:text-[22px]
+  md:leading-[28px]
+  
+  sm:text-[22px]
+  sm:leading-[28px]
+
+  text-[22px]
+  leading-[28px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-white
+  uppercase
+  pb-4
+  md:pb-2;
+}
+
+.galleryText p {
+  @apply lg:text-[20px]
+  lg:leading-[26px]
+
+  md:text-[16px]
+  md:leading-[22px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-[#ffffff]
+  font-roboto
+  pb-4;
+}
+
+.section-description p {
+  @apply lg:text-[22px] m-0 max-w-full font-[400] lg:leading-[28px];
+}
+.aboutAnimeta {
+  @apply overflow-hidden;
+}
+.aboutAnimeta h2 {
+  @apply 2xl:text-[96px]
+  2xl:leading-[80px]
+
+  xl:text-[80px]
+  xl:leading-[70px]
+
+  lg:text-[52px]
+  lg:leading-[42px]
+
+  md:text-[42px]
+  md:leading-[38px]
+
+  text-[64px]
+  leading-[60px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-black
+  uppercase
+  xl:mb-8
+  mb-4;
+}
+.aboutAnimeta p {
+  @apply 2xl:text-[24px]
+  2xl:leading-[30px]
+  
+  lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[20px]
+  
+  font-[400]
+text-[#7b7b7b];
+}
+
+.simpleTextButton {
+  @apply 2xl:text-[64px]
+  2xl:leading-[70px]
+ 
+  lg:text-[36px]
+  lg:leading-[40px]
+
+  sm:text-[28px]
+  sm:leading-[32px]
+  
+  text-[28px]
+  leading-[34px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-white
+  uppercase
+  sm:mb-12
+  mb-0
+  mt-4
+  px-4 
+  
+  lg:py-16
+  md:py-10
+  py-8
+  text-center
+  
+  sm:rounded-[46px]
+  rounded-[0px]
+  
+  shadow-xl 
+  overflow-hidden 
+  bg-[#ED2127]
+  
+  sm:ml-auto
+  sm:mr-auto;
+}
+
+.Footer {
+  @apply sm:pt-[100px] pt-[50px] pb-[50px];
+}
+
+.footer-left h2 {
+  @apply 2xl:text-[96px]
+  2xl:leading-[90px]
+
+  lg:text-[60px]
+  lg:leading-[56px]
+  
+  sm:text-[42px]
+  sm:leading-[40px]
+  
+  text-[48px]
+  leading-[50px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-white
+  uppercase
+  
+  lg:mb-8
+  sm:mb-0
+  mb-16
+
+  mt-8;
+}
+
+.footer-social {
+  @apply flex justify-start sm:justify-end;
+}
+.footer-social li {
+  @apply mx-[10px] cursor-pointer;
+}
+.footer-social li:first-child {
+  @apply ml-0;
+}
+
+.footer-left {
+  @apply w-full sm:w-1/2;
+}
+
+.footer-right {
+  @apply text-left sm:text-right w-full sm:w-1/2;
+}
+.footer-right p.heading {
+  @apply sm:text-[32px]
+  sm:leading-[40px]
+  
+  text-[32px]
+  leading-[40px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-white
+  pb-8;
+}
+
+.footer-right p {
+  @apply lg:text-[28px]
+  lg:leading-[34px]
+
+  sm:text-[16px]
+  sm:leading-[22px]
+
+  text-[16px]
+  leading-[22px]
+  
+  font-[400]
+  font-robotoCondensed
+  text-white
+  
+  sm:pb-0
+  pb-8
+  
+  text-left 
+  sm:text-right;
+}
+
+.footer-social li:last-child {
+  @apply mr-0;
+}
+
+.container {
+  @apply w-full md:w-[85%] lg:w-[80%] xl:w-[80%] 2xl:w-[94%];
+}
+.category {
+  @apply cursor-pointer pointer-events-none;
+}
+.category span {
+  @apply !block;
+}
+
+.team-section2 .icons-section .icon-box .icon img {
+  transform: scale(1);
+}
+.icons-section .icon-box .icon.rajesh img {
+  /* transform: scale(1.2); */
+}
+.icons-section .icon-box .icon.devdatta img {
+  /* transform: scale(1.6) translate(0px, 80px);
+  @apply xs:translate-y-20 xs:scale-150; */
+}
+
+.whatsappButton {
+  @apply fixed bottom-[25px] right-[25px] w-[45px] sm:w-[55px] z-[99] rotate-[-90deg];
+}
+
+.hero-section {
+  background: transparent;
+  @apply bg-cover bg-center 
+  
+  2xl:h-[90%]
+  xl:h-[90%]
+  lg:h-[auto]
+  lg:min-h-[700px]
+  md:min-h-[580px]
+  sm:min-h-[520px]
+  h-[auto]
+
+  overflow-hidden
+  flex
+  items-center
+  min-h-[700px];
+}
+
+.hero-img {
+  /* @apply xl:max-w-[700px] lg:max-w-lg md:max-w-full xl:absolute xl:top-[0px] lg:absolute md:relative lg:top-[50%] lg:translate-y-[-50%] xl:translate-y-0 md:top-0 right-0 sm:max-w-md; */
+}
+
+.blog-card {
+  @apply ease-in-out;
+}
+
+.blog-items {
+  @apply pb-16 flex flex-wrap justify-start 2xl:gap-12 xl:gap-8 gap-6;
+}
+
+.single-blog-item {
+  @apply flex bg-white
+  2xl:rounded-[46px]
+  md:rounded-[28px]
+  sm:rounded-[20px]
+  rounded-[16px]
+  overflow-hidden
+  2xl:w-[calc(33.333333%-32px)]
+  lg:w-[calc(33.333333%-22px)]
+  md:w-[calc(50%-12px)] sm:w-full;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+.icons-section .icon-box {
+  @apply 2xl:w-[calc(33.333333%-32px)] lg:w-[calc(33.333333%-22px)] md:w-[calc(33.333333%-22px)] sm:w-[calc(33.333333%-22px)] 
+  /* md:min-h-full lg:h-full md:h-[480px]  */
+  px-4 py-8 text-center flex flex-wrap gap-10 justify-start w-full items-center flex-col relative ;
+}
+.ArrowAftar{
+  @apply
+  after:absolute 
+  after:left-[calc(50%-15px)]
+  after:bottom-[-1px] 
+
+  after:h-0 after:w-0 after:border-x-[16px] after:border-x-transparent after:border-b-[16px] after:border-b-black
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.team-bio p {
+  @apply 
+  
+  lg:text-[20px]
+  lg:leading-[26px]
+  
+  text-[16px]
+  leading-[22px]
+
+  font-[400]
+  text-white
+  font-roboto 
+  mb-6;
+}
+.single-blog-item .blog-card {
+  @apply w-full flex flex-col;
+}
+
+.blog-content {
+  @apply 2xl:px-8 px-6 py-6 flex flex-col break-words h-full justify-between;
+  border-top: 1px solid #e6e7e8;
+}
+.blog-content .blog-info h3 {
+  @apply uppercase text-[16px] font-[400];
+}
+.blog-content .blog-info h3 span {
+  @apply capitalize font-[400];
+}
+.blog-content .blog-info h2 {
+  @apply 2xl:text-[40px] 
+  2xl:leading-[42px]
+
+  lg:text-[28px] 
+  lg:leading-[30px]
+  
+  md:text-[26px] 
+  md:leading-[28px]
+  
+  sm:text-[26px] 
+  sm:leading-[26px]
+
+  text-[24px] 
+  leading-[26px]
+   
+  font-[600]
+  font-roboto
+  text-black
+  
+  py-2.5;
+}
+
+.readMoreutton a {
+  @apply lowercase relative text-black font-[400] hover:text-[#ED2127] font-roboto;
+}
+.readMoreutton a:before {
+  content: "...";
+  position: absolute;
+  right: -18px;
+  bottom: -4px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  top: -4px;
+  @apply hover:text-[#ED2127];
+}
+.blog-card .blog-img span {
+  @apply !w-full !block;
+}
+.blog-card img {
+  @apply 2xl:!h-[380px] !h-[300px] object-contain !w-full;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.blog-card:hover img {
+  transform: scale(1.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-categories-tab {
+  @apply 2xl:py-20 xl:py-12 py-10 flex align-middle justify-center list-none sm:flex-wrap md:gap-12 sm:gap-10 gap-4;
+}
+
+.blog-categories-tab li {
+  @apply cursor-pointer uppercase relative sm:mx-6 lg:py-2 lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px] font-[700];
+}
+mark {
+  @apply bg-[#facbcc] text-[#000] py-1;
+}
+.blog-categories-tab li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f00;
+  bottom: 0;
+  left: 0;
+}
+
+.people-page-header {
+  @apply 
+  /* 2xl:h-[100vh] xl:h-[100vh] lg:h-[auto]*/
+  h-[auto] overflow-hidden;
+}
+.people-page-icons-section {
+  @apply py-6;
+}
+
+/* .people-page-header {
+  background:url(../public/images/v3/teamBanner.png);
+  @apply bg-cover bg-center 
+} */
+
+.people-hero-section span {
+  @apply 2xl:!h-[600px] lg:!h-[400px] md:!h-[400px] sm:!h-[300px] xs:!h-[250px] !block !w-full;
+}
+
+.people-page-header .people-hero-section h1{
+  @apply 2xl:text-[96px] 
+  2xl:leading-[90px]
+
+  xl:text-[78px] 
+  xl:leading-[70px]
+
+  lg:text-[62px] 
+  lg:leading-[56px]
+  
+  md:text-[46px] 
+  md:leading-[40px]
+  
+  sm:text-[42px] 
+  sm:leading-[42px]
+
+  xs:text-[32px] 
+  xs:leading-[36px]
+  
+  font-[400] 
+  font-robotoCondensed
+  text-black
+  text-center
+  uppercase
+  
+  2xl:pt-[11.5rem]
+
+  md:pt-[6rem]
+
+  sm:pt-[4rem]
+
+  pt-[2rem]
+
+  absolute
+  left-auto
+  right-auto
+
+  w-full
+
+  text-center
+
+
+  /* lg:mb-20 md:mb-16 sm:mb-12 xs:mb-0; */
+}
+.people-page-header .people-hero-section h1 span {
+  @apply text-[#ED2127] font-[700] font-roboto !inline
+}
+
+.team-heading {
+@apply 2xl:text-[52px] 
+2xl:leading-[62px]
+
+lg:text-[40px] 
+lg:leading-[42px]
+
+md:text-[36px] 
+md:leading-[38px]
+
+sm:text-[32px] 
+sm:leading-[36px]
+
+text-[32px] 
+leading-[36px] 
+ 
+font-[400]
+font-roboto
+text-black
+uppercase
+text-center
+
+lg:py-28
+py-16
+
+}
+
+.icon-box .title h1 {
+@apply 2xl:text-[36px] 
+2xl:leading-[38px]
+
+lg:text-[28px] 
+lg:leading-[30px]
+
+md:text-[26px] 
+md:leading-[28px]
+
+sm:text-[26px] 
+sm:leading-[26px]
+
+text-[24px] 
+leading-[26px] 
+
+font-robotoCondensed text-[#ED2127] font-[700]
+lg:pb-8
+md:pb-4 
+sm:pb-4
+pb-4
+}
+.icon-box .title mark {
+  @apply bg-[#facbcc] text-[#ED2127] font-[400];
+}
+
+.icon-box .designation p {
+@apply 2xl:text-[32px] 
+2xl:leading-[30px]
+
+lg:text-[26px] 
+lg:leading-[28px]
+
+md:text-[26px] 
+md:leading-[28px]
+
+sm:text-[26px] 
+sm:leading-[26px]
+
+text-[24px] 
+leading-[26px] 
+
+font-[500] font-robotoCondensed
+}
+
+.modalContent {
+  @apply 2xl:py-[8rem] xl:py-[8rem] md:py-[6rem] py-[4rem] w-full;
+  border-bottom:1px solid #fff;
+}
+.modalContent h2{
+  @apply 2xl:text-[32px] 
+  2xl:leading-[30px]
+  
+  lg:text-[26px] 
+  lg:leading-[28px]
+  
+  md:text-[26px] 
+  md:leading-[28px]
+  
+  sm:text-[26px] 
+  sm:leading-[26px]
+  
+  text-[24px] 
+  leading-[26px] 
+  
+  font-[500] font-robotoCondensed
+  mb-8
+}
+
+.cta-section-title {
+  @apply lg:text-[4rem] 
+  lg:leading-[4rem]
+  uppercase 
+  md:text-[2rem] 
+  md:leading-[2rem] 
+  sm:text-[2rem] 
+  sm:leading-[2rem] xs:text-[2rem] leading-[2rem]
+  font-[300] font-robotoCondensed;
+}
+
+.cta-section-title span {
+  @apply font-[600] font-robotoCondensed lg:text-[3.5rem] lg:leading-[3.5rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem];
+}
+
+.theme-btn-primary {
+  @apply py-4 px-10 rounded-full text-xl mx-4 transition-all ease-in-out duration-500;
+}
+
+.section-padding {
+  @apply lg:py-[130px] md:py-[100px] sm:py-[70px] xs:py-[50px];
+}
+
+.brand-star-title {
+  @apply lg:text-[4rem] lg:leading-[4rem] uppercase md:text-[2rem] md:leading-[2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem] font-[300] font-robotoCondensed;
+}
+
+.brand-star-title span {
+  @apply font-[600] lg:text-[3.8rem] lg:leading-[3.8rem] uppercase md:text-[2.2rem] md:leading-[2.2rem] sm:text-[2rem] sm:leading-[2rem] xs:text-[2rem] leading-[2rem] font-robotoCondensed;
+}
+
+.hs-form-87dfc11d-6610-4a0f-a5a0-09db919fec0f_1048a833-6383-4042-add9-84645d2461d5
+  .hs-form-field
+  label:not(.hs-error-msg) {
+  @apply !hidden;
+}
+
+.navbar li a {
+  @apply leading-[44px] w-full h-full block;
+}
+.navbar li a.active {
+  @apply text-[#f00] font-[500];
+}
+
+.gallery {
+  position: relative;
+}
+
+.slick-prev {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 99;
+  border: none;
+  font-size: 0px;
+  background-image: url(../public/images/back-angle.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.slick-next {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  z-index: 99;
+  border: none;
+  font-size: 0px;
+  background-image: url(../public/images/next-angle.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 28px;
+  background-color: transparent;
+}
+
+
+.popupForm input::placeholder {
+  @apply block
+  text-gray-400
+  text-xs
+  font-bold
+  mb-2
+  text-[#7B7B7B]
+  !font-roboto 
+}

@@ -1,0 +1,170 @@
+.Persons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+.category  {}
+.gallery{
+    /* background-image: url(../../public/images/gallery-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.category img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.category img:hover {
+    filter: grayscale(0%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.Persons span {
+    display: block !important;
+}
+
+.category {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.category h2 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 5%;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.category:hover h2 {
+    bottom: 5%;
+    letter-spacing: 2px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.person-content {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.person-content h2 {
+    font-size: 72px;
+    color: #fff;
+    margin: 0px;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Persons div {
+    flex: 0 0 auto;
+    width: 20%;
+    cursor: pointer;
+}
+
+.headindvideo h3{
+    font-size: 26px;
+    color: #febbff;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.headindvideo h3{
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+@media(max-width: 1750px){
+    .person-content h2{
+        font-size: 52px;
+    }
+    .category h2{
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width: 1400px) {
+    .person-content h2 {
+        font-size: 28px;
+    }
+
+    .category h2{
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .person-content h2 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 767px) {
+    .person-content h2 {
+        font-size: 18px;
+    }
+
+    .gallery{
+        padding: 0px;
+    }
+
+    .headSubs {
+        max-width: 290px;
+    }
+
+    
+
+    .Started{
+        padding: 30px 15px;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .category h2{
+        bottom: 5%;
+    }
+
+    .headindvideo h3 {
+        font-size: 32px;
+        color: #fff;
+        text-align: left;
+        padding: 14px 10px;
+    }
+
+    .bottom-heading h5 {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    
+    
+
+}

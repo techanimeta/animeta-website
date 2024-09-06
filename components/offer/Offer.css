@@ -1,0 +1,364 @@
+.Offer {
+    background-color: #000;
+    padding: 120px 0px 100px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.offer-text {
+    background-image: url(../../public/images/offer-text.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 55px 0px;
+    background-position: center top -45px;
+}
+
+.section-title-layout h2 {
+    font-size: 136px;
+    color: #f00;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Offer .section-title-layout h2 {
+    font-size: 175px;
+    line-height: 129px;
+}
+
+.section-title-layout h2 span {
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+.section-discription p {
+    font-size: 43px;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    max-width: 390px;
+    line-height: 52px;
+    margin: 0;
+}
+
+.create-me {
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    justify-content: space-evenly;
+}
+
+.what-p p {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 610px;
+}
+
+
+
+@media(max-width: 1500px) {
+    /* .Offer h2 {
+        font-size: 56px;
+    }
+
+    .Offer p {
+        font-size: 17px;
+        line-height: 25px;
+    } */
+    .section-content {
+        padding: 0px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .Offer {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .Offer h2 {
+        font-size: 42px;
+    }
+
+    .Offer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .Offer h2 {
+        font-size: 14px;
+    }
+
+    .offer-text {
+        padding: 1px 0px;
+        background-position: center top 0px;
+        background-size: contain;
+    }
+
+    .Offer h2 {
+        margin-top: 80px;
+    }
+
+    .create-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title-layout h2 {
+        font-size: 136px;
+        line-height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .section-discription p {
+        font-size: 43px;
+        line-height: 62px;
+        max-width: 100%;
+    }
+
+    .CreateSection{
+        flex-direction: column;
+    }
+
+    .diagram {
+        padding: 30px 230px 30px;
+        width: 100%;
+    }
+
+    .CreateSection p {
+        font-size: 20px;
+        margin-left: 0;
+        padding: 0 0px;
+        max-width: 100%;
+        line-height: 34px;
+    }
+
+    .section-content {
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    .Offer .section-title-layout h2 {
+        font-size: 175px;
+        line-height: 129px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .what {
+        padding: 80px 0px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        height: auto;
+    }
+
+    .CreateSection {
+        padding: 0;
+    }
+
+    .Offer {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .direction-change .section-title-layout h2 {
+        font-size: 136px;
+        margin-bottom: 20px;
+        line-height: 98px;
+    }
+    .newsHeader h2 {
+        font-size: 136px;
+    }
+    
+    .LogoFooter {
+        text-align: center;
+    }
+    
+}
+
+@media(max-width: 991px) {
+    .Offer {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .Offer h2 {
+        font-size: 42px;
+    }
+
+    .Offer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .Offer h2 {
+        font-size: 14px;
+    }
+
+    .offer-text {
+        padding: 1px 0px;
+        background-position: center top 0px;
+        background-size: contain;
+    }
+
+    .Offer h2 {
+        margin-top: 80px;
+    }
+
+    .create-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title-layout h2 {
+        font-size: 136px;
+        line-height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .section-discription p {
+        font-size: 43px;
+        line-height: 62px;
+        max-width: 100%;
+    }
+
+    .CreateSection{
+        flex-direction: column;
+    }
+
+    .diagram {
+        padding: 30px 230px 30px;
+        width: 100%;
+    }
+
+    .CreateSection p {
+        font-size: 20px;
+        margin-left: 0;
+        padding: 0 0px;
+        max-width: 100%;
+        line-height: 34px;
+    }
+
+    .section-content {
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    .Offer .section-title-layout h2 {
+        font-size: 175px;
+        line-height: 129px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .what {
+        padding: 80px 0px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        height: auto;
+    }
+
+    .CreateSection {
+        padding: 0;
+    }
+
+    .Offer {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .direction-change .section-title-layout h2 {
+        font-size: 136px;
+        margin-bottom: 20px;
+        line-height: 98px;
+    }
+    .newsHeader h2 {
+        font-size: 136px;
+    }
+    
+    .LogoFooter {
+        text-align: center;
+    }
+    
+}
+
+@media(max-width: 767px) {
+    .Offer {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .Offer h2 {
+        font-size: 42px;
+    }
+
+    .Offer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .Offer h2 {
+        font-size: 14px;
+    }
+
+    .offer-text {
+        padding: 1px 0px;
+        background-position: center top 0px;
+        background-size: contain;
+    }
+
+    .Offer h2 {
+        margin-top: 80px;
+    }
+
+    .create-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title-layout h2 {
+        font-size: 56px;
+        line-height: 41px;
+    }
+    
+
+    .section-discription p {
+        font-size: 29px;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .diagram {
+        padding: 30px 30px 30px;
+        width: 100%;
+    }
+
+    .section-content {
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    .Offer .section-title-layout h2 {
+        font-size: 56px;
+        line-height: 42px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .CreateSection {
+        padding: 0;
+    }
+
+    .Offer {
+        padding: 40px 0px 30px 0px;
+    }
+    
+}

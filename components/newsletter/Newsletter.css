@@ -1,0 +1,371 @@
+.Newsletter {
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px 100px 0px;
+    position: relative;
+    z-index: 2;
+}
+.hubspot-form-wrapper iframe {
+    height: auto !important;
+}
+.Newsletter h2 {
+    font-size: 57px;
+    font-weight: normal;
+    margin: 0px 0px 15px 0px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Newsletter p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0px;
+}
+
+.headSubs h4 {
+    font-size: 27px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    background-color: #8500e2;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.max-width-1000 {
+    max-width: 1000px;
+    margin-top: 35px;
+}
+
+.info p{
+    color: #fff;
+    margin-top: 15px;
+}
+
+.hs-form-87dfc11d-6610-4a0f-a5a0-09db919fec0f_62f8fed2-27c4-4669-b6ad-a95af2b39cc2 .hs-form-field label:not(.hs-error-msg) {
+    color: #fff !important;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
+.width-adjust {
+    width: 330px;
+    height: 32px;
+}
+
+.max-width-1000 p {
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 60px;
+}
+
+.btn-shadow-2 {
+    content: "";
+    background: url(../../public/images/subscribe-dotted.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 134px;
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+    max-width: 420px;
+    margin: 0 auto;
+    z-index: -1;
+    max-width: 230px;
+}
+
+.formControl {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+    border: none;
+    margin-right: 20px;
+    outline: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Akzidenz-Grotesk BQ Extended';
+}
+
+.formControl:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(270deg, #b421d3 0, #fed4a4 48.96%, #fed4a4 73.96%, #4d1f80 97.92%);
+    z-index: -2;
+    border-radius: 0.5rem;
+    content: '';
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.hs_email label {
+    position: absolute;
+    top: -25px;
+    display: none;
+}
+
+.hs-error-msgs label {
+    position: static;
+    display: none;
+}
+
+.hs_error_rollup {
+    display: none;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    background-color: #8500e2;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form [type="submit"] {
+    display: block;
+    background: #8500e2;
+    border: none;
+    color: #fff;
+    padding: 33px 50px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.hs-error-msgs {
+    list-style: none;
+}
+
+.hs-error-msgs li {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+form div {
+    width: 100%;
+}
+
+.submitBtn {
+    position: relative;
+    background: url(../../public/images/Subscribe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+    padding: 18px 55px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-submit {
+    display: block;
+    background: #8500e2;
+    border: none;
+    color: #fff;
+    padding: 33px 50px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-submit:hover {
+    background: #760bc1;
+}
+
+.btn-submit {
+    display: block;
+}
+
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.headSubs h2 {
+    font-size: 62px;
+    color: #f00;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 54px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.headSubs h2 span {
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+.headSubs p{
+    font-size: 43px;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    line-height: 52px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media(max-width: 991px) {
+    .Newsletter {
+        padding: 40px 0px;
+    }
+
+    .Newsletter h2 {
+        font-size: 42px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .formControl {
+        margin-right: 0px;
+    }
+
+    .submitBtn {
+        margin-top: 20px;
+    }
+
+    .Newsletter p {
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .Newsletter {
+        padding: 40px 0px;
+    }
+
+    .Newsletter h2 {
+        font-size: 42px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .formControl {
+        margin-right: 0px;
+    }
+
+    .submitBtn {
+        margin-top: 20px;
+    }
+
+    .Newsletter p {
+        font-size: 16px;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .headSubs img {
+        max-width: 250px !important;
+    }
+
+    .btn-submit {
+        display: block;
+        background: #8500e2;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 0;
+
+    }
+
+    .input input {
+        padding: 10px;
+    }
+
+    form [type="submit"] {
+        display: block;
+        background: #8500e2;
+        border: none;
+        color: #fff;
+        padding: 12px 20px 10px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 0;
+    }
+
+    .Newsletter h2 {
+        font-size: 42px;
+        line-height: 32px;
+    }
+
+    .Newsletter p {
+        font-size: 30px;
+        margin-bottom: 0px;
+        line-height: 34px;
+    }
+
+    .Newsletter .info p{
+        font-size: 18px;
+    }
+
+    .footer-left p {
+        font-size: 20px;
+    }
+}

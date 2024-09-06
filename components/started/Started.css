@@ -1,0 +1,137 @@
+.Started {
+    /* background-image: url(../../public/images/started-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #000;
+    padding: 120px 0px 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+/* 
+.container {
+    max-width: 1250px !important;
+    margin: 0 auto !important;
+} */
+
+.text-center {
+    text-align: center;
+}
+
+.Started h2 {
+    font-size: 52px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: 'FatFrank';
+}
+
+.Started h1 {
+    margin: 50px 50px 20px;
+    font-size: 20px;
+    /* background: url(../../public/images/texture.jpg); */
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.Started p {
+    font-size: 24px;
+    color: #fff;
+    margin: 0px auto;
+    max-width: 1180px;
+    padding: 0 15px;
+    font-weight: normal;
+    line-height: 34px;
+    font-family: 'Akzidenz-Grotesk BQ Extended';
+}
+
+.mobile-only{
+    display: none;
+}
+
+.Started h2 br{
+    display: none;
+}
+
+@media(max-width:1400px) {
+    /* .container {
+        max-width: 90% !important;
+    } */
+    .Started h2{
+        font-size: 37px;
+    }
+    .Started p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+/* 
+@media(max-width:1100px) {
+    .container {
+        max-width: 90% !important;
+    }
+} */
+
+@media(max-width: 991px) {
+    /* .container {
+        max-width: 90% !important;
+    } */
+
+    .Started h2 {
+        font-size: 26px;
+    }
+
+    .Started h1 {
+        font-size: initial;
+    }
+
+    .Started p {
+        font-size: 14px;
+        padding: 0;
+        line-height: 24px;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 767px) {
+    /* .container {
+        max-width: 90% !important;
+    } */
+
+    .Started h2 {
+        font-size: 26px;
+    }
+
+    .Started h1 {
+        font-size: initial;
+    }
+
+    .Started p {
+        font-size: 14px;
+        padding: 0;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    .mobile-only{
+        display: block;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .Started h1{
+        margin: 20px 0px 20px;
+    }
+
+    .Started h2 br{
+        display: block;
+    }
+}
