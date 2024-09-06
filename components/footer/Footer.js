@@ -61,7 +61,7 @@ function Footer() {
         </div>
       </section>
       {/* <div className="floating-icon">
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/918104266277">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/919136061435">
           {" "}
           <Image src={WhatsAppGreen} className="lazyload" alt="FooterLogo" />
         </a>
