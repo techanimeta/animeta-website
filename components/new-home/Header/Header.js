@@ -62,7 +62,7 @@ const  Header = () => {
                 </div>
             </nav>
             <div className='whatsappButton'>
-                <a href='https://wa.me/919136061435?text=Hello%2C%20thank%20you%20for%20contacting%20Animeta.%20Please%20leave%20us%20a%20brief%20message%20and%20we%27ll%20get%20back%20to%20you' target='_blank' rel="noreferrer" className='iconBox'>
+                <a href='https://wa.me/919136061435' target='_blank' rel="noreferrer" className='iconBox'>
                     <img src="/images/v3/whatsapp.png" alt="Brand Star" className='object-contain image1' />
                 </a>
             </div>
