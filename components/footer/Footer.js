@@ -29,7 +29,7 @@ function Footer() {
               <li>
                 <a
                   aria-label="Chat on WhatsApp"
-                  href="https://wa.me/919136061435"
+                  href="href='https://wa.me/919136061435?text=Hello%2C%20thank%20you%20for%20contacting%20Animeta.%20Please%20leave%20us%20a%20brief%20message%20and%20we%27ll%20get%20back%20to%20you"
                   target="_blank"
                   rel="noreferrer" 
                 >
