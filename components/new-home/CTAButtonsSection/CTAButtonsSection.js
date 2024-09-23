@@ -13,7 +13,7 @@ const CTAButtonsSection = () => {
                             </picture>
                         </div>
                         <div className="ctaContentBox">
-                            <h5>Infleuncer marketing platform <br />for Brand and Talent Agency</h5>
+                            <h5>Influencer marketing platform <br />for Brand and Talent Agency</h5>
                             <a href="#animetaBrandStar" className='ctaButtons'>More info</a>
                         </div>
                     </div>
